@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player 1.0</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='inarawrrr.css'>
+</head>
+<body>
+    <div style="height: 100%; width: 100%; margin-left: 400px;">
+        <div class="youtube" style="margin-top: 50px;">
+            <h2>Youtube Video</h2> 
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/HhjHYkPQ8F0?si=5Dc9RsS4qMXf4mRH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Alan Walker :<br> Alone Pt.II</p>
+
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/cgDiyRp2tNs?si=YA90ycaD3uQI0gpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Blacklite District :<br> Goodbye</p>
+        </div>
+
+        <div class="youtube" style="margin-top: -490px; margin-left: 400px;">
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/K4DyBUG242c?si=RrrMHGwL6NcqwSlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Ncs :<br> On and On</p>
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/lW9ep22YmlM?si=E0IMJiE5ThTSsKc2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Egzod :<br> Royalty</p>
+        </div>
+        </div>
+     <div style="margin-left: 150px; margin-top: 30px;">
+        <div class="localaudio" style="margin-left: 400px;"><div><h2>Local AUDIO</h2></div>
+            <div class="starwars">
+            <div>
+                <p>Star Wars : Return of the Jedi</p>
+                <img src="playbtn2.png" id="icon">
+                <img src="soundwave.png" id="gif1">	
+                </div>
+            
+                <div>
+                <p>Star Wars : Imperial March</p>
+                <img src="playbtn2.png" id="icon2">
+                <img src="soundwave.png" id="gif2">	
+                </div>
+            </div>
+            <div class="starwars" style="margin-left:300px; margin-top: -205px;">
+                <div>
+                <p>Star Wars : Death Star Run</p>
+                <img src="playbtn2.png" id="icon3">
+                <img src="msounwave.png" id="gif3">	
+                </div>
+            
+                <div>
+                <p>Star Wars : The Emperor</p>
+                <img src="playbtn2.png" id="icon4">
+                <img src="soundwave.png" id="gif4">	
+                </div>
+            </div>
+                <div style="margin-left: 160px;">
+                <p>Star Wars : Trench Run</p>
+                <img src="playbtn2.png" id="icon5">
+                <img src="soundwave.png" id="gif5">	
+                </div>
+        </div>
+    </div>    
+        <audio id="music1">
+            <source src="battle1.mp3" type="audio/mp3">
+        </audio>
+        <audio id="music2">
+            <source src="battle2.mp3" type="audio/mp3">
+        </audio>
+        <audio id="music3">
+            <source src="battle3.mp3" type="audio/mp3">
+        </audio>
+        <audio id="music4">
+            <source src="battle4.mp3" type="audio/mp3">
+        </audio>
+        <audio id="music5">
+            <source src="SW7.mp3" type="audio/mp3">
+        </audio>
+
+        <div style="margin-top: 50px; margin-left: 400px;">
+        <video src="Insert Audio Video in HTML.mp4" controls height="600px" width="400px"></video>
+        <audio src="battle2.mp3" controls></audio>
+        <audio src="judas.mp3" controls></audio>
+        <audio src="house.mp3" controls></audio>
+        <audio src="house.mp3" controls></audio>
+    </div> 
+<script>
+    var music1=document.getElementById("music1");
+    var music2=document.getElementById("music2");
+    var music3=document.getElementById("music3");
+    var music4=document.getElementById("music4");
+    var music5=document.getElementById("music5");
+
+    var icon=document.getElementById("icon");
+    var icon2=document.getElementById("icon2");
+    var icon3=document.getElementById("icon3");
+    var icon4=document.getElementById("icon4");
+    var icon5=document.getElementById("icon5");
+
+    var gif1=document.getElementById("gif1");
+    var gif2=document.getElementById("gif2");
+    var gif3=document.getElementById("gif3");
+    var gif4=document.getElementById("gif4");
+    var gif5=document.getElementById("gif5");
+
+    icon.onclick=function(){
+        if(music1.paused){
+            music1.play();
+            icon.src="pausebtn.png";
+            gif1.src="soundwave.gif";
+        }else{
+            music1.pause();
+            icon.src="playbtn2.png";
+            gif1.src="soundwave.png";
+        }
+    }
+
+    icon2.onclick=function(){
+        if(music2.paused){
+            music2.play();
+            icon2.src="pausebtn.png";
+            gif2.src="soundwave.gif";
+        }else{
+            music2.pause();
+            icon2.src="playbtn2.png";
+            gif2.src="soundwave.png";
+        }
+    }
+    
+    icon3.onclick=function(){
+        if(music3.paused){
+            music3.play();
+            icon3.src="pausebtn.png";
+            gif3.src="soundwave.gif";
+        }else{
+            music3.pause();
+            icon3.src="playbtn2.png";
+            gif3.src="soundwave.png";
+        }
+    }
+
+    icon4.onclick=function(){
+        if(music4.paused){
+            music4.play();
+            icon4.src="pausebtn.png";
+            gif4.src="soundwave.gif";
+        }else{
+            music4.pause();
+            icon4.src="playbtn2.png";
+            gif4.src="soundwave.png";
+        }
+    }
+
+    icon5.onclick=function(){
+        if(music5.paused){
+            music5.play();
+            icon5.src="pausebtn.png";
+            gif5.src="soundwave.gif";
+        }else{
+            music5.pause();
+            icon5.src="playbtn2.png";
+            gif5.src="soundwave.png";
+        }
+    }
+</script>
+</body>
+</html>
